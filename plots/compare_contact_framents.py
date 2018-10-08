@@ -85,7 +85,7 @@ for speed in range(60, 150, 20):
     mean_sig = np.mean(data.values.tolist(), axis=1)[0]
     std_sig = np.std(data.values.tolist(), axis=1)[0]    
     #ax = plt.subplot(9, 1, counter)
-    plt.plot(timeline, mean_sig, label='Speed %d °/s' % speed)
+    plt.plot(timeline, mean_sig, label='Speed %d $^\circ$/s' % speed)
     #plt.fill_between(timeline, mean_sig-std_sig, mean_sig+std_sig, color='grey', alpha=.3)
 
     plt.ylabel("Amplitude, a.u.")
@@ -104,7 +104,7 @@ for distance in range(9, 22, 4):
     plt.plot(timeline, mean_sig, label='Dist %d cm' % distance)
     #plt.fill_between(timeline, mean_sig-std_sig, mean_sig+std_sig, color='grey', alpha=.3)
     plt.ylabel("Amplitude, a.u.")
-    plt.title('Speed = 100 °/s')
+    plt.title('Speed = 100 $^\circ$/s')
     plt.xlabel("Time, ms")
     counter += 1
     plt.legend()
